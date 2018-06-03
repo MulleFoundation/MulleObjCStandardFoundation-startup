@@ -1,5 +1,5 @@
 //
-//  MulleObjCStandalone.m
+//  MulleObjCStandardFoundation-startup.m
 //  MulleObjC
 //
 //  Copyright (c) 2016 Nat! - Mulle kybernetiK.
@@ -35,4 +35,4 @@
 //
 #include "MulleObjCStandardFoundationSetup.h"
 
-#include "MulleObjCStandardFoundationStartup.inc"
+#include "MulleObjCStandardFoundation-startup.inc"
