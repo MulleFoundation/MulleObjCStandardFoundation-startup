@@ -41,14 +41,16 @@
 //
 #define _GNU_SOURCE
 
-#import "import-private.h"
+#import <MulleObjCStandardFoundation/MulleObjCStandardFoundation.h>
 
-#import "mulle-foundation-universeconfiguration-private.h"
+#import <MulleObjCStandardFoundation/private/mulle-foundation-universeconfiguration-private.h>
 
 #import <MulleObjC/private/MulleObjCExceptionHandler-Private.h>
 #import <MulleObjC/private/mulle-objc-startup-private.inc>
 
-#include "mulle-foundation-startup-private.inc"
+#include <MulleObjCStandardFoundation/private/mulle-foundation-startup-private.inc>
+
+#define MULLE_OBJC_STANDARD_FOUNDATION_STARTUP_VERSION  ((1 << 20) | (16 << 8) | 0)
 
 
 static void   bang( struct _mulle_objc_universe *universe,
