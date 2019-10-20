@@ -30,7 +30,7 @@ executable.
 
 ## Install
 
-See [mulle-foundation-developer](//github.com/mulle-objc/mulle-foundation-developer) for
+See [mulle-foundation-developer](//github.com/MulleFoundation/mulle-foundation-developer) for
 installation instructions.
 
 
