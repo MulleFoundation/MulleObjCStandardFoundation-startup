@@ -53,7 +53,7 @@ now build the project
 
 ### Conveniently with mulle-sde
 
-Install [mulle-sde]/(//github.com/mulle-sde) and run `mulle-sde craft`.
+Install [mulle-sde](//github.com/mulle-sde) and run `mulle-sde craft`.
 
 
 ### Platforms and Compilers
