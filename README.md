@@ -36,11 +36,12 @@ installation instructions.
 
 ## Build
 
+This is a [mulle-sde]/(//github.com/mulle-sde) project which will
+fetch all dependencies and build with `mulle-sde craft`.
+
 ### Manually with cmake
 
-Install all above prerequisites:
-
-now build the project
+Install all prerequisites (use mulle-sde to figure them out) then:
 
 ```
 (
@@ -50,10 +51,6 @@ now build the project
    make
 )
 ```
-
-### Conveniently with mulle-sde
-
-Install [mulle-sde](//github.com/mulle-sde) and run `mulle-sde craft`.
 
 
 ### Platforms and Compilers
