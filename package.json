@@ -1,0 +1,19 @@
+{
+   "name" : "MulleObjCStandardFoundation-startup",
+   "version" : "0.18.0",
+   "description" : "▶️ Startup library for MulleObjCStandardFoundation",
+   "homepage" : "https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup",
+   "bugs" : "https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/issues",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repository" : {
+      "type" : "git",
+      "url" : "MulleFoundation/MulleObjCStandardFoundation-startup"
+   },
+   "dependencies" : {
+      "MulleObjCStandardFoundation" : "MulleFoundation/MulleObjCStandardFoundation",
+      "mulle-atinit" : "mulle-core/mulle-atinit",
+      "mulle-atexit" : "mulle-core/mulle-atexit",
+      "mulle-dlfcn" : "mulle-core/mulle-dlfcn"
+   }
+}
