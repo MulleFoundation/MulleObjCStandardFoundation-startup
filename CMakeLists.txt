@@ -1,6 +1,8 @@
 cmake_minimum_required( VERSION 3.1)
 
 project( MulleObjCStandardFoundation-startup C)
+add_definitions( -DMULLE_OBJC_STANDARD_FOUNDATION_STARTUP_EXTERN_GLOBAL=extern)
+
 
 
 ### mulle-sde environment
