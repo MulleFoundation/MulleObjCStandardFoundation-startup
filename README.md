@@ -28,6 +28,12 @@ seperate library is to bequeath the required dependencies
 executable.
 
 
+
+### You are here
+
+![Overview](overview.dot.svg)
+
+
 ## Install
 
 See [mulle-foundation-developer](//github.com/MulleFoundation/mulle-foundation-developer) for
