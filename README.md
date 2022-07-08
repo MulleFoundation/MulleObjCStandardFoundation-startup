@@ -16,7 +16,7 @@ its startup library.
 
 Build Status | Release Version
 -------------|-----------------------------------
-[![Build Status](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup)
+[![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup)
 
 
 ## Sourcetree
