@@ -4,19 +4,19 @@
 
 This static library provides the required `__register_mulle_objc_universe`
 function for executables, that link against
-[MulleObjCStandardFoundation](https://github.com/mulle-objc/MulleObjCStandardFoundation).
+[MulleObjCStandardFoundation](//github.com/MulleFoundation/MulleObjCStandardFoundation).
 
 > Hardly anyone ever does this though, except MulleObjCStandardFoundation tests.
 
 Projects will usually rather link against the
-[Foundation](https://github.com/mulle-objc/Foundation) though, and will use
+[Foundation](//github.com/MulleFoundation/Foundation) though, and will use
 its startup library.
 
 
 
 Build Status | Release Version
 -------------|-----------------------------------
-[![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup.svg)](https://github.com/MulleFoundation/MulleObjCStandardFoundation/actions-startup) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation/actions-startup/workflows/CI/badge.svg?branch=release)](https://github.com/MulleFoundation/MulleObjCStandardFoundation/actions-startup)
+[![Build Status](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup)
 
 
 ## Sourcetree
