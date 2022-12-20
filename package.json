@@ -8,7 +8,7 @@
    "license" : "UNLICENSED",
    "repository" : {
       "type" : "git",
-      "url" : "MulleFoundation/MulleObjCStandardFoundation-startup"
+      "url" : "github:MulleFoundation/MulleObjCStandardFoundation-startup"
    },
    "dependencies" : {
       "MulleObjCStandardFoundation" : "git://github.com/MulleFoundation/MulleObjCStandardFoundation",
