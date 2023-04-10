@@ -43,14 +43,14 @@
 
 #import <MulleObjCStandardFoundation/MulleObjCStandardFoundation.h>
 
-#import <MulleObjCStandardFoundation/private/mulle-foundation-universeconfiguration-private.h>
+#import <MulleObjCStandardFoundation/mulle-foundation-universeconfiguration-private.h>
 
-#import <MulleObjC/private/MulleObjCExceptionHandler-Private.h>
-#import <MulleObjC/private/mulle-objc-startup-private.inc>
+#import <MulleObjC/MulleObjCExceptionHandler-Private.h>
+#import <MulleObjC/mulle-objc-startup-private.inc>
 
-#include <MulleObjCStandardFoundation/private/mulle-foundation-startup-private.inc>
+#include <MulleObjCStandardFoundation/mulle-foundation-startup-private.inc>
 
-#define MULLE_OBJC_STANDARD_FOUNDATION_STARTUP_VERSION  ((0 << 20) | (20 << 8) | 2)
+#define MULLE_OBJC_STANDARD_FOUNDATION_STARTUP_VERSION  ((0 << 20) | (20 << 8) | 3)
 
 
 static void   bang( struct _mulle_objc_universe *universe,

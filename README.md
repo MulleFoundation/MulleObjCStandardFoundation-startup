@@ -12,14 +12,14 @@ Projects will usually rather link against the
 [Foundation](//github.com/MulleFoundation/Foundation) though, and will use
 its startup library.
 
+| Release Version                                       | Release Notes
+|-------------------------------------------------------|--------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//MulleObjCStandardFoundation-startup.svg?branch=release) [![Build Status](https://github.com//MulleObjCStandardFoundation-startup/workflows/CI/badge.svg?branch=release)](//github.com//MulleObjCStandardFoundation-startup/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
 
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup)
 
 
-## Sourcetree
+## Info
 
 The main raison d'être of MulleObjCStandardFoundation-startup as a
 seperate library is to bequeath the required dependencies
@@ -29,45 +29,61 @@ executable.
 
 
 
+
+## Requirements
+
+|   Requirement         | Release Version  | Description
+|-----------------------|------------------|---------------
+| [MulleObjCStandardFoundation](https://github.com/MulleFoundation/MulleObjCStandardFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🚤 Objective-C classes based on the C standard library
+| [mulle-atinit](https://github.com/mulle-core/mulle-atinit) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🤱🏼 Compatibility library for deterministic initializers
+| [mulle-atexit](https://github.com/mulle-core/mulle-atexit) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 👼 Compatibility library to fix atexit
+
 ### You are here
 
 ![Overview](overview.dot.svg)
 
+## Add
+
+Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCStandardFoundation-startup to your project:
+
+``` sh
+mulle-sde add github:MulleFoundation/MulleObjCStandardFoundation-startup
+```
 
 ## Install
 
-See [mulle-foundation-developer](//github.com/MulleFoundation/mulle-foundation-developer) for
-installation instructions.
+### Install with mulle-sde
 
+Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCStandardFoundation-startup and all dependencies:
 
-## Build
-
-This is a [mulle-sde]/(//github.com/mulle-sde) project which will
-fetch all dependencies and build with `mulle-sde craft`.
-
-### Manually with cmake
-
-Install all prerequisites (use mulle-sde to figure them out) then:
-
-```
-(
-   mkdir build &&
-   cd build &&
-   cmake .. &&
-   make
-)
+``` sh
+mulle-sde install --prefix /usr/local \
+   https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/latest.tar.gz
 ```
 
+### Manual Installation
 
-### Platforms and Compilers
+Install the requirements:
 
-All platforms and compilers supported by
-[mulle-c11](//github.com/mulle-c/mulle-c11/) and
-[mulle-thread](//github.com/mulle-concurrent/mulle-thread/).
+| Requirements                                 | Description
+|----------------------------------------------|-----------------------
+| [MulleObjCStandardFoundation](https://github.com/MulleFoundation/MulleObjCStandardFoundation)             | 🚤 Objective-C classes based on the C standard library
+| [mulle-atinit](https://github.com/mulle-core/mulle-atinit)             | 🤱🏼 Compatibility library for deterministic initializers
+| [mulle-atexit](https://github.com/mulle-core/mulle-atexit)             | 👼 Compatibility library to fix atexit
 
+Install **MulleObjCStandardFoundation-startup** into `/usr/local` with [cmake](https://cmake.org):
+
+``` sh
+cmake -B build \
+      -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_PREFIX_PATH=/usr/local \
+      -DCMAKE_BUILD_TYPE=Release &&
+cmake --build build --config Release &&
+cmake --install build --config Release
+```
 
 ## Author
 
-[Nat!](//www.mulle-kybernetik.com/weblog) for
-[Mulle kybernetiK](//www.mulle-kybernetik.com) and
-[Codeon GmbH](//www.codeon.de)
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+
+

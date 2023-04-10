@@ -1,0 +1,39 @@
+{
+   project =
+   {
+      description="▶️ Startup library for MulleObjCStandardFoundation";
+      domain="github";
+      name="MulleObjCStandardFoundation-startup";
+      user="MulleFoundation";
+      repo="MulleObjCStandardFoundation-startup";
+      homepage="https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup";
+      license="BSD-3-Clause"
+   };
+   dependencies =
+   (
+      {
+         description="🚤 Objective-C classes based on the C standard library";
+         domain="github";
+         name="MulleObjCStandardFoundation";
+         repo="MulleObjCStandardFoundation";
+         url="https://github.com/MulleFoundation/MulleObjCStandardFoundation";
+         user="MulleFoundation";
+      },
+      {
+         description="🤱🏼 Compatibility library for deterministic initializers";
+         domain="github";
+         name="mulle-atinit";
+         repo="mulle-atinit";
+         url="https://github.com/mulle-core/mulle-atinit";
+         user="mulle-core";
+      },
+      {
+         description="👼 Compatibility library to fix atexit";
+         domain="github";
+         name="mulle-atexit";
+         repo="mulle-atexit";
+         url="https://github.com/mulle-core/mulle-atexit";
+         user="mulle-core";
+      }
+   )
+}
