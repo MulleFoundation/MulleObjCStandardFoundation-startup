@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCStandardFoundation-startup",
-   "version" : "0.20.2",
+   "version" : "0.20.3",
    "description" : "Startup library for MulleObjCStandardFoundation",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -11,7 +11,6 @@
    "dependencies" : {
       "MulleFoundation/MulleObjCStandardFoundation": "*",
       "mulle-core/mulle-atinit": "*",
-      "mulle-core/mulle-atexit": "*",
-      "mulle-core/mulle-dlfcn": "*"
+      "mulle-core/mulle-atexit": "*"
    }
 }
