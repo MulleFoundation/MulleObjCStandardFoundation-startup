@@ -72,6 +72,8 @@ Install the requirements:
 | [mulle-atinit](https://github.com/mulle-core/mulle-atinit)             | 🤱🏼 Compatibility library for deterministic initializers
 | [mulle-atexit](https://github.com/mulle-core/mulle-atexit)             | 👼 Compatibility library to fix atexit
 
+Download the latest [tar](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/refs/tags/latest.zip) archive and unpack it.
+
 Install **MulleObjCStandardFoundation-startup** into `/usr/local` with [cmake](https://cmake.org):
 
 ``` sh
