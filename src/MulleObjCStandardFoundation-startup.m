@@ -50,7 +50,7 @@
 
 #include <MulleObjCStandardFoundation/mulle-foundation-startup-private.inc>
 
-#define MULLE_OBJC_STANDARD_FOUNDATION_STARTUP_VERSION  ((0 << 20) | (20 << 8) | 3)
+#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0 << 20) | (20 << 8) | 4)
 
 
 static void   bang( struct _mulle_objc_universe *universe,
