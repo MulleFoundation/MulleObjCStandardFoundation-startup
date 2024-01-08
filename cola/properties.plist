@@ -1,7 +1,7 @@
 {
    project =
    {
-      description="▶️ Startup library for MulleObjCStandardFoundation";
+      description="▶️  Startup code for MulleObjCStandardFoundation";
       domain="github";
       name="MulleObjCStandardFoundation-startup";
       user="MulleFoundation";
