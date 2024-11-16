@@ -54,8 +54,6 @@ mulle-sde add github:MulleFoundation/MulleObjCStandardFoundation-startup
 
 ## Install
 
-### Install with mulle-sde
-
 Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCStandardFoundation-startup and all dependencies:
 
 ``` sh
@@ -63,7 +61,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/latest.tar.gz
 ```
 
-### Manual Installation
+### Legacy Installation
 
 Install the requirements:
 
