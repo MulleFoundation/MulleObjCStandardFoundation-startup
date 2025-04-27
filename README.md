@@ -13,9 +13,9 @@ Projects will usually rather link against the
 its startup library.
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCStandardFoundation-startup/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for MulleObjCStandardFoundation-startup](https://deepwiki.com/MulleFoundation/MulleObjCStandardFoundation-startup)
 
 
 
