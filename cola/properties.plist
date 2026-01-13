@@ -3,6 +3,8 @@
    {
       description="▶️  Startup code for MulleObjCStandardFoundation";
       domain="github";
+      language="c";
+      dialect="objc";
       name="MulleObjCStandardFoundation-startup";
       user="MulleFoundation";
       repo="MulleObjCStandardFoundation-startup";
@@ -18,22 +20,6 @@
          repo="MulleObjCStandardFoundation";
          url="https://github.com/MulleFoundation/MulleObjCStandardFoundation";
          user="MulleFoundation";
-      },
-      {
-         description="🤱🏼 Compatibility library for deterministic initializers";
-         domain="github";
-         name="mulle-atinit";
-         repo="mulle-atinit";
-         url="https://github.com/mulle-core/mulle-atinit";
-         user="mulle-core";
-      },
-      {
-         description="👼 Compatibility library to fix atexit";
-         domain="github";
-         name="mulle-atexit";
-         repo="mulle-atexit";
-         url="https://github.com/mulle-core/mulle-atexit";
-         user="mulle-core";
       }
    );
 }
