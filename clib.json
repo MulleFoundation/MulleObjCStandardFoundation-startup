@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCStandardFoundation-startup",
-   "version" : "0.20.4",
+   "version" : "0.20.7",
    "description" : "▶️  Startup code for MulleObjCStandardFoundation",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -9,8 +9,6 @@
       "src/MulleObjCStandardFoundation-startup.m"
    ],
    "dependencies" : {
-      "MulleFoundation/MulleObjCStandardFoundation": "*",
-      "mulle-core/mulle-atinit": "*",
-      "mulle-core/mulle-atexit": "*"
+      "MulleFoundation/MulleObjCStandardFoundation": "*"
    }
 }
