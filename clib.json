@@ -1,11 +1,12 @@
 {
    "name" : "MulleObjCStandardFoundation-startup",
-   "version" : "0.20.7",
+   "version" : "0.20.8",
    "description" : "▶️  Startup code for MulleObjCStandardFoundation",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/MulleObjCStandardFoundation-startup",
    "src" : [
+      "asset/dox/TOC.md",
       "src/MulleObjCStandardFoundation-startup.m"
    ],
    "dependencies" : {
