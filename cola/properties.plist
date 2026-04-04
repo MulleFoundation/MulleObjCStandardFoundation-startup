@@ -6,6 +6,7 @@
       language="c";
       dialect="objc";
       name="MulleObjCStandardFoundation-startup";
+      version="0.20.8";
       user="MulleFoundation";
       repo="MulleObjCStandardFoundation-startup";
       homepage="https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup";
