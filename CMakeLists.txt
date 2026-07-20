@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleObjCStandardFoundation-startup VERSION 0.20.8 LANGUAGES C)
+project( MulleObjCStandardFoundation-startup VERSION 0.20.9 LANGUAGES C)
 
 
 
