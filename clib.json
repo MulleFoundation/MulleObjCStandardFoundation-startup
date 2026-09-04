@@ -10,6 +10,7 @@
       "src/MulleObjCStandardFoundation-startup.m"
    ],
    "dependencies" : {
-      "MulleFoundation/MulleObjCStandardFoundation": "*"
+      "MulleFoundation/MulleObjCStandardFoundation": "*",
+      "mulle-core/mulle-stacktrace": "*"
    }
 }

@@ -25,3 +25,83 @@ else()
    set( MULLE_FALLBACK_LIBRARY_PREFIX "${CMAKE_SHARED_LIBRARY_PREFIX}")
    set( MULLE_FALLBACK_LIBRARY_SUFFIX "${CMAKE_SHARED_LIBRARY_SUFFIX}")
 endif()
+
+#
+# Generated from sourcetree: 1F3F4A01-96B8-4CF9-AAE8-2B7AA31F7D64;mulle-stacktrace;no-all-load,no-cmake-loader,no-cmake-searchpath,no-import,no-link;
+# Disable with : `mulle-sourcetree mark mulle-stacktrace no-header`
+# Disable for this platform: `mulle-sourcetree mark mulle-stacktrace no-cmake-platform-${MULLE_UNAME}`
+# Disable for a sdk: `mulle-sourcetree mark mulle-stacktrace no-cmake-sdk-<name>`
+#
+foreach( _TMP_MULLE__STACKTRACE_HEADER_TARGET_TARGET mulle-stacktrace)
+   if( TARGET ${_TMP_MULLE__STACKTRACE_HEADER_TARGET_TARGET})
+      set( MULLE__STACKTRACE_HEADER_TARGET ${_TMP_MULLE__STACKTRACE_HEADER_TARGET_TARGET})
+      break()
+   endif()
+endforeach()
+if( NOT MULLE__STACKTRACE_HEADER AND NOT MULLE__STACKTRACE_HEADER_TARGET)
+   find_file( MULLE__STACKTRACE_HEADER NAMES
+      mulle-stacktrace.h mulle-stacktrace/mulle-stacktrace.h
+      NO_CMAKE_SYSTEM_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_FIND_ROOT_PATH
+   )
+   if( NOT MULLE__STACKTRACE_HEADER AND NOT DEPENDENCY_IGNORE_SYSTEM_HEADERS)
+      find_file( MULLE__STACKTRACE_HEADER NAMES
+         mulle-stacktrace.h mulle-stacktrace/mulle-stacktrace.h
+      )
+   endif()
+   message( STATUS "MULLE__STACKTRACE_HEADER is ${MULLE__STACKTRACE_HEADER}")
+
+   #
+   # Add MULLE__STACKTRACE_HEADER to HEADER_ONLY_LIBRARIES list.
+   # Disable with: `mulle-sourcetree mark mulle-stacktrace no-cmake-add`
+   #
+   set( HEADER_ONLY_LIBRARIES
+      ${MULLE__STACKTRACE_HEADER}
+      ${HEADER_ONLY_LIBRARIES}
+   )
+   if( MULLE__STACKTRACE_HEADER)
+      #
+      # Inherit ObjC loader and link dependency info.
+      # Disable with: `mulle-sourcetree mark mulle-stacktrace no-cmake-inherit`
+      #
+      get_filename_component( _TMP_MULLE__STACKTRACE_ROOT "${MULLE__STACKTRACE_HEADER}" DIRECTORY)
+      get_filename_component( _TMP_MULLE__STACKTRACE_NAME "${_TMP_MULLE__STACKTRACE_ROOT}" NAME)
+      get_filename_component( _TMP_MULLE__STACKTRACE_ROOT "${_TMP_MULLE__STACKTRACE_ROOT}" DIRECTORY)
+      get_filename_component( _TMP_MULLE__STACKTRACE_ROOT "${_TMP_MULLE__STACKTRACE_ROOT}" DIRECTORY)
+      #
+      # Search for "Definitions.cmake" and "DependenciesAndLibraries.cmake" to include.
+      # Disable with: `mulle-sourcetree mark mulle-stacktrace no-cmake-dependency`
+      #
+      foreach( _TMP_MULLE__STACKTRACE_NAME IN LISTS _TMP_MULLE__STACKTRACE_NAME)
+         set( _TMP_MULLE__STACKTRACE_DIR "${_TMP_MULLE__STACKTRACE_ROOT}/include/${_TMP_MULLE__STACKTRACE_NAME}/cmake")
+         # use explicit path to avoid "surprises"
+         if( IS_DIRECTORY "${_TMP_MULLE__STACKTRACE_DIR}")
+            list( INSERT CMAKE_MODULE_PATH 0 "${_TMP_MULLE__STACKTRACE_DIR}")
+            # we only want top level INHERIT_OBJC_DEPS, so disable them
+            if( NOT NO_INHERIT_OBJC_DEPS)
+               set( NO_INHERIT_OBJC_DEPS OFF)
+            endif()
+            list( APPEND _TMP_INHERIT_OBJC_DEPS ${NO_INHERIT_OBJC_DEPS})
+            set( NO_INHERIT_OBJC_DEPS ON)
+            #
+            include( "${_TMP_MULLE__STACKTRACE_DIR}/DependenciesAndLibraries.cmake" OPTIONAL)
+            #
+            list( GET _TMP_INHERIT_OBJC_DEPS -1 NO_INHERIT_OBJC_DEPS)
+            list( REMOVE_AT _TMP_INHERIT_OBJC_DEPS -1)
+            list( REMOVE_ITEM CMAKE_MODULE_PATH "${_TMP_MULLE__STACKTRACE_DIR}")
+            #
+            unset( MULLE__STACKTRACE_DEFINITIONS)
+            unset( MULLE__STACKTRACE_RENDEZVOUS_GLOBALS)
+            include( "${_TMP_MULLE__STACKTRACE_DIR}/Definitions.cmake" OPTIONAL)
+            list( APPEND INHERITED_DEFINITIONS ${MULLE__STACKTRACE_DEFINITIONS})
+            include( "${_TMP_MULLE__STACKTRACE_DIR}/Definitions.cmake" OPTIONAL)
+            list( APPEND RENDEZVOUS_GLOBALS ${MULLE__STACKTRACE_RENDEZVOUS_GLOBALS})
+            break()
+         else()
+            message( STATUS "${_TMP_MULLE__STACKTRACE_DIR} not found")
+         endif()
+      endforeach()
+   else()
+      # Disable with: `mulle-sourcetree mark mulle-stacktrace no-require`
+      message( SEND_ERROR "MULLE__STACKTRACE_HEADER was not found in mulle-stacktrace.h mulle-stacktrace/mulle-stacktrace.h")
+   endif()
+endif()

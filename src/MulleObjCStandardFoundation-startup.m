@@ -1,8 +1,8 @@
 //
 //  MulleObjCStandardFoundation-startup.m
-//  MulleObjC
+//  MulleObjCStandardFoundation-startup
 //
-//  Copyright (c) 2016 Nat! - Mulle kybernetiK.
+//  Copyright (c) 2018 Nat! - Mulle kybernetiK.
 //  Copyright (c) 2016 Codeon GmbH.
 //  All rights reserved.
 //
@@ -33,7 +33,6 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 //
-
 //
 // Startup is the small library that gets linked into the executable
 // and determines the start of the foundation (usually MulleFoundation,
@@ -50,7 +49,15 @@
 
 #include <MulleObjCStandardFoundation/mulle-foundation-startup-private.inc>
 
-#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (20 << 8) | 9)
+#include <mulle-stacktrace/mulle-stacktrace.h>
+
+MULLE_OBJC_RUNTIME_GLOBAL
+void
+   mulle_objc_universe_set_stacktrace_callback(
+      struct _mulle_objc_universe *universe,
+      void (*callback)( FILE *fp));
+
+#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 0)
 
 
 static void   bang( struct _mulle_objc_universe *universe,
@@ -61,5 +68,7 @@ static void   bang( struct _mulle_objc_universe *universe,
 
    mulle_foundation_universeconfiguration_set_defaults( &config);
    MulleObjCStandardFoundationBang( universe, allocator, &config);
+   mulle_objc_universe_set_stacktrace_callback( universe,
+                                                 mulle_stacktrace_once);
 }
 
