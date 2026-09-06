@@ -197,6 +197,24 @@ export MULLE__DLFCN_BRANCH="prerelease"
 
 
 #
+# dlfcn-win32 nodetype: ${DLFCN__WIN32_NODETYPE:-tar}
+#
+export DLFCN__WIN32_NODETYPE="git"
+
+
+#
+# dlfcn-win32 url: ${DLFCN__WIN32_URL:-https://github.com/mulle-core/dlfcn-win32/archive/refs/tags/${MULLE_TAG}.tar.gz}
+#
+export DLFCN__WIN32_URL="https://github.com/mulle-core/dlfcn-win32.git"
+
+
+#
+# dlfcn-win32 branch: ${DLFCN__WIN32_BRANCH}
+#
+export DLFCN__WIN32_BRANCH="prerelease"
+
+
+#
 # mulle-objc-debug nodetype: ${MULLE__OBJC__DEBUG_NODETYPE:-tar}
 #
 export MULLE__OBJC__DEBUG_NODETYPE="git"
@@ -284,5 +302,23 @@ export MULLE_OBJC_CONTAINER_FOUNDATION_URL="https://github.com/MulleFoundation/M
 # MulleObjCContainerFoundation branch: ${MULLE_OBJC_CONTAINER_FOUNDATION_BRANCH}
 #
 export MULLE_OBJC_CONTAINER_FOUNDATION_BRANCH="prerelease"
+
+
+#
+# mulle-stacktrace nodetype: ${MULLE__STACKTRACE_NODETYPE:-tar}
+#
+export MULLE__STACKTRACE_NODETYPE="git"
+
+
+#
+# mulle-stacktrace url: ${MULLE__STACKTRACE_URL:-https://github.com/mulle-core/mulle-stacktrace/archive/${MULLE_TAG}.tar.gz}
+#
+export MULLE__STACKTRACE_URL="https://github.com/mulle-core/mulle-stacktrace.git"
+
+
+#
+# mulle-stacktrace branch: ${MULLE__STACKTRACE_BRANCH}
+#
+export MULLE__STACKTRACE_BRANCH="prerelease"
 
 
