@@ -57,7 +57,7 @@ void
       struct _mulle_objc_universe *universe,
       void (*callback)( FILE *fp));
 
-#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 0)
+#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 1)
 
 
 static void   bang( struct _mulle_objc_universe *universe,
