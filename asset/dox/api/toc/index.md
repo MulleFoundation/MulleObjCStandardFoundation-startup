@@ -98,10 +98,10 @@ void
 ```
 
 #### Version macro
-- The source-level version constant (value `0.21.0`):
+- The source-level version constant (value `0.21.1`):
 
 ```c
-#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 0)
+#define MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 1)
 ```
 
 (Note: the macro name is `MULLE_OBJC_STANDARD_FOUNDATION__STARTUP_VERSION`
