@@ -42,6 +42,7 @@ executable.
 |   Requirement         | Release Version  | Description
 |-----------------------|------------------|---------------
 | [MulleObjCStandardFoundation](https://github.com/MulleFoundation/MulleObjCStandardFoundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCStandardFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCStandardFoundation/workflows/CI/badge.svg?branch=release)](https://github.com/MulleFoundation/MulleObjCStandardFoundation/actions/workflows/mulle-sde-ci.yml) | 🚤 Objective-C classes based on the C standard library
+| [mulle-stacktrace](https://github.com/mulle-core/mulle-stacktrace) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-core/mulle-stacktrace.svg) [![Build Status](https://github.com/mulle-core/mulle-stacktrace/workflows/CI/badge.svg?branch=release)](https://github.com/mulle-core/mulle-stacktrace/actions/workflows/mulle-sde-ci.yml) | 👣 Stracktrace support for various OS
 
 ### You are here
 
@@ -64,13 +65,14 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/latest.tar.gz
 ```
 
-### Legacy Installation
+### Manual Installation
 
 Install the requirements:
 
 | Requirements                                 | Description
 |----------------------------------------------|-----------------------
 | [MulleObjCStandardFoundation](https://github.com/MulleFoundation/MulleObjCStandardFoundation)             | 🚤 Objective-C classes based on the C standard library
+| [mulle-stacktrace](https://github.com/mulle-core/mulle-stacktrace)             | 👣 Stracktrace support for various OS
 
 Download the latest [tar](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/refs/tags/latest.tar.gz) or [zip](https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup/archive/refs/tags/latest.zip) archive and unpack it.
 

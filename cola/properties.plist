@@ -6,7 +6,6 @@
       language="c";
       dialect="objc";
       name="MulleObjCStandardFoundation-startup";
-      version="0.21.1";
       user="MulleFoundation";
       repo="MulleObjCStandardFoundation-startup";
       homepage="https://github.com/MulleFoundation/MulleObjCStandardFoundation-startup";
@@ -21,6 +20,14 @@
          repo="MulleObjCStandardFoundation";
          url="https://github.com/MulleFoundation/MulleObjCStandardFoundation";
          user="MulleFoundation";
+      },
+      {
+         description="👣 Stracktrace support for various OS";
+         domain="github";
+         name="mulle-stacktrace";
+         repo="mulle-stacktrace";
+         url="https://github.com/mulle-core/mulle-stacktrace";
+         user="mulle-core";
       }
    );
 }
